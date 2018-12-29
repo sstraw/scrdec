@@ -45,6 +45,7 @@ for i in range(31, 127):
         encoded = ENCODING_TABLE[i-31][j]
         raw_table[encoded][j] = i if i != 31 else 0x09
 
+col = 0
 for i in range(len(raw_table)):
     if raw_table[i] != [0, 0, 0]:
         print ("{: <6}: (0x{:02x}, 0x{:02x}, 0x{:02x}), ".format(
@@ -54,6 +55,10 @@ for i in range(len(raw_table)):
                    raw_table[i][2]), 
                    end=''
               )
+        col += 1
 
-    if i % 2 == 1:
-        print ()
+        if col % 2 == 0:
+            print ()
+
+if col % 2 == 1:
+    print ()
