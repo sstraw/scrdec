@@ -6,7 +6,7 @@ developers to obfuscate the script while still having cscript and similar
 interpreters run it.
 
 While this is less commonly used, it is still available and malware authors
-have started using it to obfuscate malicious JS.
+sometimes use it to obfuscate malicious JS.
 
 These files typically have an extension of .jse or .vbe . Additionally, they
 have a "header" of 4 bytes like below
