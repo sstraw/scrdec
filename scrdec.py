@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 Implements decoding for Windows Script Encoder.
 
